@@ -38,8 +38,10 @@
                                 <input type="number" name="quantity" value="1" min="1" style="width: 60px">
                                 <input type="submit" value="  Add to cart  " class="option" style="height: 40px">
                             </form>
-                            <form action="{{route('show.cart')}}" > @csrf <input type="submit" value="Cart" class="option" style="height: 40px"></form>
-
+                            <form action="{{ route('show.cart') }}"  style="display: inline;">
+                                @csrf
+                                <button type="submit" class="nav-link btn btn-link" style="display: inline;"><i class="icon icon-bag" ></i></button>
+                            </form>
                         </div>
                     </div>
             </div>
